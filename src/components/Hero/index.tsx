@@ -1,8 +1,8 @@
-import React from "react"
-import Logo from "../../assets/square-logo.svg"
+import React from "react";
+import Logo from "../../assets/square-logo.svg";
 
 export interface HeroProps {
-  title?: string
+  title?: string;
 }
 
 export const Hero: React.FC<HeroProps> = (
@@ -10,37 +10,37 @@ export const Hero: React.FC<HeroProps> = (
 ) => {
   return (
     <>
-      <div className="w-60 h-60 flex flex-col items-center justify-center mx-auto">
+      <div className="mx-auto flex h-60 w-60 flex-col items-center justify-center">
         <a href="https://www.elitizon.com" hrefLang="en">
           <Logo />
         </a>
       </div>
 
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">
+      <section className="body-font text-gray-600">
+        <div className="container mx-auto px-5 py-24">
+          <h1 className="title-font mb-20 text-center text-2xl font-medium text-gray-900 sm:text-3xl">
             {title}
           </h1>
-          <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-            <div className="p-4 md:w-1/3 flex">
-              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-pink-100 text-pink-500 mb-4 flex-shrink-0">
+          <div className="-mx-4 -mb-10 -mt-4 flex flex-wrap space-y-6 sm:-m-4 md:space-y-0">
+            <div className="flex p-4 md:w-1/3">
+              <div className="mb-4 inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-pink-100 text-pink-500">
                 <svg
                   fill="none"
                   stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  className="w-6 h-6"
+                  className="h-6 w-6"
                   viewBox="0 0 24 24"
                 >
                   <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                 </svg>
               </div>
               <div className="flex-grow pl-6">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
+                <h2 className="title-font mb-2 text-lg font-medium text-gray-900">
                   Cat
                 </h2>
-                <p className="leading-relaxed text-base">
+                <p className="text-base leading-relaxed">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer non suscipit metus. Donec laoreet nunc eget velit
                   imperdiet ullamcorper. Sed aliquam urna massa, id semper ante
@@ -50,7 +50,7 @@ export const Hero: React.FC<HeroProps> = (
                   efficitur diam, nec pharetra sapien.
                 </p>
                 <a
-                  className="mt-3 text-pink-500 inline-flex items-center"
+                  className="mt-3 inline-flex items-center text-pink-500"
                   href="/"
                 >
                   Learn More
@@ -60,7 +60,7 @@ export const Hero: React.FC<HeroProps> = (
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    className="w-4 h-4 ml-2"
+                    className="ml-2 h-4 w-4"
                     viewBox="0 0 24 24"
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -68,15 +68,15 @@ export const Hero: React.FC<HeroProps> = (
                 </a>
               </div>
             </div>
-            <div className="p-4 md:w-1/3 flex">
-              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-pink-100 text-pink-500 mb-4 flex-shrink-0">
+            <div className="flex p-4 md:w-1/3">
+              <div className="mb-4 inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-pink-100 text-pink-500">
                 <svg
                   fill="none"
                   stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  className="w-6 h-6"
+                  className="h-6 w-6"
                   viewBox="0 0 24 24"
                 >
                   <circle cx="6" cy="6" r="3"></circle>
@@ -85,10 +85,10 @@ export const Hero: React.FC<HeroProps> = (
                 </svg>
               </div>
               <div className="flex-grow pl-6">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
+                <h2 className="title-font mb-2 text-lg font-medium text-gray-900">
                   Elephant
                 </h2>
-                <p className="leading-relaxed text-base">
+                <p className="text-base leading-relaxed">
                   Vestibulum tempus metus vestibulum rhoncus porta. Duis
                   fringilla finibus odio pretium fermentum. Vestibulum dictum,
                   nisl in suscipit tristique, libero ligula convallis dui, et
@@ -99,7 +99,7 @@ export const Hero: React.FC<HeroProps> = (
                   sagittis rhoncus.
                 </p>
                 <a
-                  className="mt-3 text-pink-500 inline-flex items-center"
+                  className="mt-3 inline-flex items-center text-pink-500"
                   href="/"
                 >
                   Learn More
@@ -109,7 +109,7 @@ export const Hero: React.FC<HeroProps> = (
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    className="w-4 h-4 ml-2"
+                    className="ml-2 h-4 w-4"
                     viewBox="0 0 24 24"
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -117,15 +117,15 @@ export const Hero: React.FC<HeroProps> = (
                 </a>
               </div>
             </div>
-            <div className="p-4 md:w-1/3 flex">
-              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-pink-100 text-pink-500 mb-4 flex-shrink-0">
+            <div className="flex p-4 md:w-1/3">
+              <div className="mb-4 inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-pink-100 text-pink-500">
                 <svg
                   fill="none"
                   stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  className="w-6 h-6"
+                  className="h-6 w-6"
                   viewBox="0 0 24 24"
                 >
                   <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
@@ -133,10 +133,10 @@ export const Hero: React.FC<HeroProps> = (
                 </svg>
               </div>
               <div className="flex-grow pl-6">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
+                <h2 className="title-font mb-2 text-lg font-medium text-gray-900">
                   Lion
                 </h2>
-                <p className="leading-relaxed text-base">
+                <p className="text-base leading-relaxed">
                   Donec vel ultrices ante, in feugiat felis. Quisque pretium
                   turpis ac sapien interdum fermentum. Phasellus vel lacus elit.
                   Sed id quam ut ante aliquet tristique. Morbi commodo aliquam
@@ -144,7 +144,7 @@ export const Hero: React.FC<HeroProps> = (
                   elit. Phasellus dignissim felis vitae euismod eleifend.
                 </p>
                 <a
-                  className="mt-3 text-pink-500 inline-flex items-center"
+                  className="mt-3 inline-flex items-center text-pink-500"
                   href="/"
                 >
                   Learn More
@@ -154,7 +154,7 @@ export const Hero: React.FC<HeroProps> = (
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    className="w-4 h-4 ml-2"
+                    className="ml-2 h-4 w-4"
                     viewBox="0 0 24 24"
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -166,5 +166,5 @@ export const Hero: React.FC<HeroProps> = (
         </div>
       </section>
     </>
-  )
-}
+  );
+};
