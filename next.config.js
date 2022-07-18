@@ -6,7 +6,7 @@ module.exports = {
       issuer: /\.(js|ts)x?$/,
       use: [
         {
-          loader: "@svgr/webpack",
+          loader: '@svgr/webpack',
           // https://react-svgr.com/docs/options/
         },
       ],
@@ -33,7 +33,7 @@ module.exports = {
     if (!isDevelopmentMode) {
       config.module.rules.push({
         test: /\.stories.(js|tsx?)/,
-        loader: "ignore-loader",
+        loader: 'ignore-loader',
       });
     }
 
@@ -41,6 +41,6 @@ module.exports = {
   },
   poweredByHeader: false,
   images: {
-    domains: ["unsplash.com"],
+    domains: ['unsplash.com'],
   },
 };

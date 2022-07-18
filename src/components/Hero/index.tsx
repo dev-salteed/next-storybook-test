@@ -1,12 +1,12 @@
-import React from "react";
-import Logo from "../../assets/square-logo.svg";
+import React from 'react';
+import Logo from '../../assets/square-logo.svg';
 
 export interface HeroProps {
   title?: string;
 }
 
 export const Hero: React.FC<HeroProps> = (
-  { title } = { title: "A simple Tailiwind template" }
+  { title } = { title: 'A simple Tailiwind template' }
 ) => {
   return (
     <>
