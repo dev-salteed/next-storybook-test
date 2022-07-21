@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import React from 'react';
-import Logo from '../../assets/square-logo.svg';
+import Logo from '../assets/square-logo.svg';
+import Image from 'next/image';
 
 export interface HeroProps {
   title?: string;

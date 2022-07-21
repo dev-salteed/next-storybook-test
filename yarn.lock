@@ -2073,7 +2073,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/client-logger@6.5.9":
+"@storybook/client-logger@6.5.9", "@storybook/client-logger@^6.4.0":
   version "6.5.9"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-6.5.9.tgz#dc1669abe8c45af1cc38f74c6f4b15ff33e63014"
   integrity sha512-DOHL6p0uiDd3gV/Sb2FR+Vh6OiPrrf8BrA06uvXWsMRIIvEEvnparxv9EvPg7FlmUX0T3nq7d3juwjx4F8Wbcg==
@@ -2311,6 +2311,17 @@
     lodash "^4.17.21"
     regenerator-runtime "^0.13.7"
 
+"@storybook/instrumenter@^6.4.0":
+  version "6.5.9"
+  resolved "https://registry.yarnpkg.com/@storybook/instrumenter/-/instrumenter-6.5.9.tgz#885d9dec31b7b7fa6ea29b446105480450e527b8"
+  integrity sha512-I2nu/6H0MAy8d+d3LY/G6oYEFyWlc8f2Qs2DhpYh5FiCgIpzvY0DMN05Lf8oaXdKHL3lPF/YLJH17FttekXs1w==
+  dependencies:
+    "@storybook/addons" "6.5.9"
+    "@storybook/client-logger" "6.5.9"
+    "@storybook/core-events" "6.5.9"
+    core-js "^3.8.2"
+    global "^4.4.0"
+
 "@storybook/manager-webpack4@6.5.9":
   version "6.5.9"
   resolved "https://registry.yarnpkg.com/@storybook/manager-webpack4/-/manager-webpack4-6.5.9.tgz#c75d2cced4550c8a786f00b0e57b203d613e706c"
@@ -2537,6 +2548,17 @@
     read-pkg-up "^7.0.1"
     regenerator-runtime "^0.13.7"
 
+"@storybook/testing-library@^0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@storybook/testing-library/-/testing-library-0.0.13.tgz#417c87d4ea62895092ec5fdf67027ae201254f45"
+  integrity sha512-vRMeIGer4EjJkTgI8sQyK9W431ekPWYCWL//OmSDJ64IT3h7FnW7Xg6p+eqM3oII98/O5pcya5049GxnjaPtxw==
+  dependencies:
+    "@storybook/client-logger" "^6.4.0"
+    "@storybook/instrumenter" "^6.4.0"
+    "@testing-library/dom" "^8.3.0"
+    "@testing-library/user-event" "^13.2.1"
+    ts-dedent "^2.2.0"
+
 "@storybook/theming@6.5.9", "@storybook/theming@^6.5.9":
   version "6.5.9"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.5.9.tgz#13f60a3a3cd73ceb5caf9f188e1627e79f1891aa"
@@ -2691,7 +2713,7 @@
   dependencies:
     mini-svg-data-uri "^1.2.3"
 
-"@testing-library/dom@^8.16.0", "@testing-library/dom@^8.5.0":
+"@testing-library/dom@^8.16.0", "@testing-library/dom@^8.3.0", "@testing-library/dom@^8.5.0":
   version "8.16.0"
   resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-8.16.0.tgz#d6fc50250aed17b1035ca1bd64655e342db3936a"
   integrity sha512-uxF4zmnLHHDlmW4l+0WDjcgLVwCvH+OVLpD8Dfp+Bjfz85prwxWGbwXgJdLtkgjD0qfOzkJF9SmA6YZPsMYX4w==
@@ -2728,6 +2750,13 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.5.0"
     "@types/react-dom" "^18.0.0"
+
+"@testing-library/user-event@^13.2.1":
+  version "13.5.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-13.5.0.tgz#69d77007f1e124d55314a2b73fd204b333b13295"
+  integrity sha512-5Kwtbo3Y/NowpkbRuSepbyMFkZmHgD+vPzYB/RJ4oxt5Gj/avFFBYjhw27cqSVPVw/3a67NK1PbiIr9k4Gwmdg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
 
 "@testing-library/user-event@^14.2.5":
   version "14.2.5"
@@ -11736,7 +11765,7 @@ trough@^1.0.0:
   resolved "https://registry.yarnpkg.com/trough/-/trough-1.0.5.tgz#b8b639cefad7d0bb2abd37d433ff8293efa5f406"
   integrity sha512-rvuRbTarPXmMb79SmzEp8aqXNKcK+y0XaB298IXueQ8I2PsrATcPBCSPyK/dDNa2iWOhKlfNnOjdAOTBU/nkFA==
 
-ts-dedent@^2.0.0:
+ts-dedent@^2.0.0, ts-dedent@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/ts-dedent/-/ts-dedent-2.2.0.tgz#39e4bd297cd036292ae2394eb3412be63f563bb5"
   integrity sha512-q5W7tVM71e2xjHZTlgfTDoPF/SmqKG5hddq9SzR49CH2hayqRKJtQ4mtRlSxKaJlR/+9rEM+mnBHf7I2/BQcpQ==
