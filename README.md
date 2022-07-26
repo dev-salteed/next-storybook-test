@@ -10,6 +10,8 @@
 - ✅ [Typescript](https://www.typescriptlang.org/)
 - ✅ [Tailwindcss](https://www.tailwindcss.com)
 - ✅ [Storybook](https://storybook.js.org/)
+- ✅ [Axios](https://axios-http.com/kr/docs/api_intro)
+- ✅ [SWR](https://swr.vercel.app/ko)
 - ✅ [Jest](https://jestjs.io/)
 - ✅ [Import SVG as React Component (SVGR)](https://react-svgr.com/)
 
@@ -39,7 +41,7 @@ Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
 - Storybook - (^6.5.9)
 - React-hook-form - (^7.33.1)
 - Axios - (^0.27.2)
-- **!TODO!** - state-management SWR, (recoil)
+- SWR: (^1.3.0)
 
 ---
 
@@ -54,6 +56,36 @@ Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
 `tailwind css IntelliSense `
 `Prettier`
 `Eslint`
+
+## 추가 참조 사이트 모음
+
+### Tailwind class override
+
+https://www.npmjs.com/package/tailwind-merge https://github.com/richardgill/tailwind-override
+
+## Storybook sample - Fluent UI
+
+https://628d031b55e942004ac95df1-zkusndujfr.chromatic.com/?path=/docs/concepts-introduction--page
+
+https://github.com/microsoft/fluentui
+
+https://chakra-ui.com/docs/styled-system/gradient
+
+### Tailwind template/component sample
+
+- Flowbite
+- https://flowbite-react.com/badges
+- Tailwindui
+- https://tailwindui.com/
+
+### Tailwind classname extrator
+
+https://usewindy.com/?ref=Blog-CTA
+
+### Css to tailwind converter
+
+⭐️ https://transform.tools/css-to-tailwind
+https://tailwind-converter.netlify.app/
 
 <!-- ### 👉 `yarn test`
 
