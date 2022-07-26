@@ -73,6 +73,9 @@ module.exports = {
         alias: {
           ...config.resolve.alias,
           '@Components': toPath('src/components'),
+          '@Hooks': toPath('src/commons/hooks'),
+          '@Utils': toPath('src/commons/utils'),
+          '@SWR_Keys': toPath('src/commons/swr_keys'),
           //          "@emotion/styled": toPath("node_modules/@emotion/styled"),
           //          "emotion-theming": toPath("node_modules/@emotion/react")
         },

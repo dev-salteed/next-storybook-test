@@ -7,29 +7,10 @@ module.exports = {
       use: [
         {
           loader: '@svgr/webpack',
-          // https://react-svgr.com/docs/options/
         },
       ],
     });
 
-    // config.module.rules.push({
-    //   test: /\.po$/,
-    //   use: [
-    //     {
-    //       loader: "ignore-loader",
-    //     },
-    //   ],
-    // });
-
-    // // Fixes npm packages that depend on `fs` module
-    // if (!isServer) {
-    //   config.node = {
-    //     fs: "empty",
-    //   };
-    // }
-
-    // Attempt to ignore storybook files when doing a production build,
-    // see also: https://github.com/vercel/next.js/issues/1914
     if (!isDevelopmentMode) {
       config.module.rules.push({
         test: /\.stories.(js|tsx?)/,

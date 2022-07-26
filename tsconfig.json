@@ -16,7 +16,10 @@
     "incremental": true,
     "baseUrl": "./",
     "paths": {
-      "@Components/*": ["src/components/*"]
+      "@Components/*": ["src/components/*"],
+      "@Hooks/*": ["src/commons/hooks/*"],
+      "@Utils/*": ["src/commons/utils/*"],
+      "@SWR_Keys/*": ["src/commons/swr_keys/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.jsx"],

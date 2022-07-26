@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Header } from '@Components/Header';
+import { Header } from '@Components/layouts/Header';
 
 export default {
   title: 'Example/Header',
