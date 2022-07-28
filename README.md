@@ -46,8 +46,8 @@ src
 ├──commons // 공용 소스 모음
 │  ├── hooks // custom hook 모음
 │  ├── swr_keys // swr에서 사용되는 key 상수화
-│      ├── local.js // 로컬 state key
-│      └── server.js // 서버 url key
+│      ├── local.ts // 로컬 state key
+│      └── server.ts // 서버 url key
 │  └── utils // 공용 함수, 상수들 모음
 ├──component // 컴포넌트들 모음
 │  ├── atoms // 공통적으로 사용되는 소규모 컴포넌트들
