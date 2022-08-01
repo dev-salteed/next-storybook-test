@@ -20,5 +20,5 @@ input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
 }
 .form-check-input {
-  background-image: url(../src/stories/assets/form-checkbox.svg);
+  /*background-image: url(../src/stories/assets/form-checkbox.svg);*/
 }

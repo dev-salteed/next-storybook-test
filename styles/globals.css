@@ -1,0 +1,66 @@
+/*@tailwind base;*/
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 62.5% !important;
+}
+body {
+  font-size: 1.4rem; /* =14px */
+}
+/* input box color */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #fff inset;
+  -webkit-text-fill-color: #000;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+.form-check-input {
+  /*background-image: url(../src/stories/assets/form-checkbox.svg);*/
+}
+
+.ui-wrap {
+}
+.ui-container.mini-drawer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ui-container main {
+  flex-grow: 1;
+}
+
+/** 참고 규칙
+1. 강제 우선순위를 주고 싶을 경우 - 샘플: rounded !important (scss : rounded #{!important})
+*/
+/* base:기본태그 */
+@layer components {
+  * {
+    @apply shadow-none;
+  }
+  .ui-header {
+    @apply bg-gnb shadow-none;
+  }
+  .ui-header .header,
+  .ui-container .ui-space {
+    @apply min-h-[50px];
+  }
+  .ui-header .header .btn-close {
+    @apply hidden;
+  }
+  .btn {
+    @apply shadow-none hover:bg-transparent hover:shadow-none;
+  }
+  .btn.MuiButton-textPrimary {
+    @apply text-primary;
+  }
+  .btn.MuiButton-containedPrimary {
+    @apply bg-primary;
+  }
+  .btn.MuiButton-outlinedPrimary {
+    @apply border-primary text-primary;
+  }
+}
