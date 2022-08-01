@@ -6,11 +6,10 @@ import Button from '@mui/material/Button';
 /**
  * Primary UI component for user interaction
  */
-export const SKButton = ({ basic, children, ...props }) => {
-  const mode = basic;
+export const SKButton = ({ ...props }) => {
   return (
     <Button className={['btn'].join(' ')} {...props}>
-      {children}
+      {props.children}
       {/*<span className="text">{label}</span>*/}
     </Button> /* disabled : disabled={false}처리해도 될듯 */
   );

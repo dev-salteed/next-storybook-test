@@ -51,6 +51,7 @@ input:-webkit-autofill:active {
   .ui-header .header .btn-close {
     @apply hidden;
   }
+  /*
   .btn {
     @apply shadow-none hover:bg-transparent hover:shadow-none;
   }
@@ -63,4 +64,5 @@ input:-webkit-autofill:active {
   .btn.MuiButton-outlinedPrimary {
     @apply border-primary text-primary;
   }
+  */
 }
