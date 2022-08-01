@@ -2,6 +2,8 @@ import Link from '@mui/material/Link';
 import LayoutBasic from '@Components/layouts/LayoutBasic';
 import Slider from '@mui/material/Slider';
 import Button from '@mui/material/Button';
+
+import { SKButton as Btn } from '@Components/atoms/button/SKButton';
 //import SKButton from '../src/components/atoms/button/SKButton';
 
 export default function Home() {
@@ -64,6 +66,9 @@ export default function Home() {
         <Button color="secondary" className="btn">
           Secondary
         </Button>
+        <Btn color="secondary" variant="contained" size="large">
+          aa
+        </Btn>
       </LayoutBasic>
     </>
   );
